@@ -111,7 +111,19 @@ footer p{
         padding-left: 0;
     }
 
+    input[type=button]{
+        width: 100%;
+    }
+
+    .log{
+        background-color: red;
+    }
+
     .socials{
         flex-basis: 50vw;
+    }
+
+    footer{
+        text-align: center;
     }
 }
