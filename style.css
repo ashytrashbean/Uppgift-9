@@ -1,30 +1,37 @@
 body{
     background-image: linear-gradient(to bottom,black,red);
     background-repeat: no-repeat;
-    height: 60vh;
-    margin: 10%;
+    height: 75vh;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1,p,span{
+
+main{
+    margin: 10%;
+
+}
+
+h1,p{
     text-align: center;
     color: white;
+}
+
+
+label{
+    color: white;
+    cursor: pointer;
 }
 
 form{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* padding-left: 110px; */
+    align-items: flex-start ;
+    padding-left: 60px;
 }
 
-.normal{
-    align-self: baseline;
-}
-
-.socials{
-    align-self: baseline;
-}
 
 input[type=text],input[type=password]{
     padding: 5px;
@@ -69,4 +76,37 @@ input[type=button]:hover{
 .or{
     padding-top: 30px;
     margin: 10px;
+}
+
+footer{
+    background-color: rgb(62, 61, 61);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p{
+    text-align: start;
+    padding-left: 20px;
+    line-height: 2px;
+    color: lightgray;
+}
+
+/* -------------from Desktop to Mobile ------------------- */
+
+@media(max-width:750px){
+    body{
+        background-color: lightgray;
+    }
+
+    form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .socials{
+        flex-basis: 50vw;
+    }
 }
