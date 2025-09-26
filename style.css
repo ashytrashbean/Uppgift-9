@@ -96,7 +96,12 @@ footer p{
 
 @media(max-width:750px){
     body{
+        background-image: none;
         background-color: lightgray;
+    }
+
+    h1,p,label{
+        color: #000;
     }
 
     form{
